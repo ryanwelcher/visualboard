@@ -1,0 +1,25 @@
+.item {
+	border:solid 1px var( --c3);
+	margin: 0 0.5em;
+	width:var(--buttonSize);
+	height:var(--buttonSize);
+	font-family: 'Open Sans', sans-serif;
+	font-size:1em;
+	color: var(--c1);
+	background-color: var( --tile-color );
+	transition:width 1s, opacity 1s;
+	visibility: visible;
+	opacity: 1;
+	flex-shrink: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.item.--completed {
+	width:0;
+	visibility: hidden;
+	opacity: 0;
+}

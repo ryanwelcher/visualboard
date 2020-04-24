@@ -1,0 +1,43 @@
+:root {
+	--tile-color: burlywood;
+}
+
+
+body{
+	margin: 0;
+	font-size:25px;
+  	overflow: hidden;
+}
+
+#container {
+	padding:5px 0px;
+	width:100vw;
+	height:100vh;
+	display:flex;
+	overflow:hidden;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.item {
+	border:solid 1px rgb(12, 54, 104);
+	margin: 0 0.5em;
+	width:10em;
+	height:10em;
+	background-color: var( --tile-color );
+	transition:width 1s, opacity 1s;
+	visibility: visible;
+	opacity: 1;
+	flex-shrink: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.item.--clicked {
+	width:0;
+	visibility: hidden;
+	opacity: 0;
+}

@@ -7,7 +7,7 @@ const Tile = ( { title } ) => {
 	return (
 		<button className={ classes } onClick={ () => {
 			setCompleted( ! completed );
-		} }>{ title }</button>
+		} }><span className='tile-name'>{ title }</span></button>
 	);
 };
 

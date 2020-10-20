@@ -1,13 +1,11 @@
 :root {
-	
-	--buttonSize: 10em;
 	--c1: #233D4D;
 	--c2: #FE7F2D;
 	--c3: #FCCA46;
 	--c4: #A1C181;
 	--c5: #619B8A;
 	--c6: burlywood;
-
+	--buttonSize: 10em;
 	--tile-color: var( --c3 );
 }
 
@@ -16,17 +14,19 @@
 body{
 	margin: 0;
 	font-size:25px;
-	overflow: hidden;
 	background-color: var(--c5);
+	font-family: 'Open Sans', sans-serif;
 }
 
 #container {
-	padding:5px 0px;
-	margin-left:40vw;
-	width:100vw;
-	height:100vh;
 	display:flex;
+	margin:4px;
+	flex-wrap:wrap;
 	overflow:hidden;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+#title {
+text-align: center;
 }

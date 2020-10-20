@@ -1,25 +1,25 @@
 .item {
-	border:solid 1px var( --c3);
-	margin: 0 0.5em;
+	border:solid 1px var(--c1);
 	width:var(--buttonSize);
 	height:var(--buttonSize);
-	font-family: 'Open Sans', sans-serif;
 	font-size:1em;
+	margin:2px;
 	color: var(--c1);
 	background-color: var( --tile-color );
-	transition:width 1s, opacity 1s;
-	visibility: visible;
-	opacity: 1;
+	transition: opacity .5s;
 	flex-shrink: 0;
 	display:flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	cursor: pointer;
 	user-select: none;
+	padding:0 0 15px 0;
 }
 
 .item.--completed {
-	width:0;
-	visibility: hidden;
-	opacity: 0;
+	opacity: .2;
+}
+
+.item.--completed .tile-name {
+	color:blue
 }
